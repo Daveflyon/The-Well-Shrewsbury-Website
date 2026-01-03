@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CHURCH_INFO } from '../constants';
+import { CHURCH_INFO } from '../constants.ts';
 
 const Footer: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { CHURCH_INFO } from '../constants';
+import { CHURCH_INFO } from '../constants.ts';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -102,6 +102,7 @@ const Header: React.FC = () => {
               to={item.path}
               onClick={() => setIsMenuOpen(false)}
               className={`block px-4 py-4 text-base font-bold rounded-xl transition-all duration-300 ${
+                // Fixed: used item.path instead of non-existent variable 'path'
                 isActive(item.path) ? 'bg-brand-50 text-brand-500' : 'text-gray-600 hover:bg-gray-50 hover:text-brand-500'
               }`}
             >

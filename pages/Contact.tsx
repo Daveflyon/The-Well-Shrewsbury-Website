@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CHURCH_INFO } from '../constants';
+import { CHURCH_INFO } from '../constants.ts';
 
 const Contact: React.FC = () => {
   return (

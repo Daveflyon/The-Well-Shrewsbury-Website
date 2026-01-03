@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CHURCH_INFO } from '../constants';
-import VisitForm from '../components/VisitForm';
+import { CHURCH_INFO } from '../constants.ts';
+import VisitForm from '../components/VisitForm.tsx';
 
 const Home: React.FC = () => {
   return (
