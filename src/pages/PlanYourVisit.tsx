@@ -53,7 +53,7 @@ const PlanYourVisit: React.FC = () => {
                   Parking & Arrival
                 </h2>
                 <div className="text-xl text-gray-500 font-medium leading-relaxed space-y-8">
-                  <p>Being central, there is plenty of public parking. We suggest <strong className="text-gray-900">St Julian's Friars</strong> or <strong className="text-gray-900">Abbey Foregate</strong> car parks—both are within a short walk of The Well.</p>
+                  <p>Being central, there is plenty of public parking. We suggest <strong className="text-gray-900">Frankwell (Free)</strong>, <strong className="text-gray-900">The Gap</strong>, or town centre car parks—all are within a short walk of The Well.</p>
                   <p>Our welcome team will be at the main doors to greet you, answer any questions, and direct you to the main meeting space.</p>
                 </div>
               </div>
