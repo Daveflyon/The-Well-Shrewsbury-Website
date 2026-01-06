@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CHURCH_INFO } from '../constants.ts';
 
@@ -52,7 +53,8 @@ const PlanYourVisit: React.FC = () => {
                   Parking & Arrival
                 </h2>
                 <div className="text-xl text-gray-500 font-medium leading-relaxed space-y-8">
-                  <p>Being central, there is plenty of public parking. We suggest <strong className="text-gray-900">Frankwell</strong> (Free), <strong className="text-gray-900">The Gap</strong>, or town centre car parks (Paid)—all are within a short walk of The Well.</p>
+                  <p>Being central, there is plenty of public parking. We suggest <strong className="text-gray-900">St Julian's Friars</strong> or <strong className="text-gray-900">Abbey Foregate</strong> car parks—both are within a short walk of The Well.</p>
+                  <p>Our welcome team will be at the main doors to greet you, answer any questions, and direct you to the main meeting space.</p>
                 </div>
               </div>
 
@@ -66,7 +68,7 @@ const PlanYourVisit: React.FC = () => {
                   {[
                     { title: "Service Format", desc: "A blend of sincere worship, community prayer, and relevant teaching from the Bible." },
                     { title: "Dress Code", desc: "Come as you feel comfortable. We are a relaxed community with no formal dress expectations." },
-                    { title: "Accessibility", desc: "The building we rent is not fully accessible for wheelchair users. Please contact us for further information." },
+                    { title: "Accessibility", desc: "The building is fully accessible. Please let our team know if you need any specific assistance." },
                     { title: "Community Lunch", desc: "Stay for a free buffet lunch after the service. It's a wonderful way to meet others." }
                   ].map(item => (
                     <div key={item.title} className="bg-gray-50 p-10 rounded-[2.5rem] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-xl transition-all duration-500">
@@ -84,16 +86,12 @@ const PlanYourVisit: React.FC = () => {
                 <p className="text-xl text-gray-300 mb-14 font-medium leading-relaxed">We value our children and youth as full members of our community. We provide safe and fun environments for every age group.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
-                    <h4 className="font-extrabold text-2xl mb-4 font-heading">Bible Club & Youth</h4>
-                    <p className="text-gray-400 font-medium leading-relaxed mb-2">Starts at 10:30 AM</p>
-                    <ul className="text-gray-400 font-medium leading-relaxed list-disc list-inside">
-                      <li>Children's Bible Club (Ages 3-12)</li>
-                      <li>Youth Group (Ages 13-19+)</li>
-                    </ul>
+                    <h4 className="font-extrabold text-2xl mb-4 font-heading">Bible Club (10:30)</h4>
+                    <p className="text-gray-400 font-medium leading-relaxed">Engaging crafts and age-appropriate Bible lessons. Parents are welcome to stay nearby for care needs.</p>
                   </div>
                   <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Mother & Baby</h4>
-                    <p className="text-gray-400 font-medium leading-relaxed">A quiet and dedicated room upstairs is available. Please note space and toys are currently limited.</p>
+                    <p className="text-gray-400 font-medium leading-relaxed">A quiet and dedicated room upstairs equipped with toys and comfortable seating for your convenience.</p>
                   </div>
                 </div>
               </div>
@@ -118,6 +116,13 @@ const PlanYourVisit: React.FC = () => {
                       <p className="text-gray-500 font-medium text-sm">Expect a warm, friendly, and informal setting.</p>
                     </div>
                   </div>
+                </div>
+                <div className="bg-brand-50 p-12 rounded-[3rem] border border-brand-100">
+                  <h3 className="text-2xl font-black text-brand-900 mb-6 font-heading tracking-tight">Need Support?</h3>
+                  <p className="text-brand-800 font-medium text-sm leading-relaxed mb-8">If you have specific needs or require transport assistance, we are here to help.</p>
+                  <a href={`tel:${CHURCH_INFO.contact.phone1}`} className="inline-flex items-center text-brand-500 font-black text-sm uppercase tracking-widest hover:translate-x-2 transition-transform duration-300">
+                    Get in touch →
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CHURCH_INFO } from '../constants.ts';
 
@@ -45,7 +46,7 @@ const Sundays: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent opacity-60" />
             <div className="relative z-10">
               <h2 className="text-5xl md:text-7xl font-black mb-20 text-center font-heading tracking-tighter">Midweek Life.</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div className="bg-white/5 p-16 rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500">
                   <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.3em] block mb-8">Tuesdays • {CHURCH_INFO.meetings.tuesday.time}</span>
                   <h3 className="text-4xl font-extrabold mb-8 font-heading">{CHURCH_INFO.meetings.tuesday.title}</h3>
@@ -56,13 +57,6 @@ const Sundays: React.FC = () => {
                   <h3 className="text-4xl font-extrabold mb-8 font-heading">{CHURCH_INFO.meetings.wednesday.title}</h3>
                   <p className="text-gray-400 text-xl font-medium leading-relaxed">{CHURCH_INFO.meetings.wednesday.description}</p>
                 </div>
-              </div>
-              
-              {/* Coming Soon Section */}
-              <div className="bg-brand-500/20 p-16 rounded-[3rem] border border-brand-500/30 backdrop-blur-md text-center">
-                <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.3em] block mb-6">Coming Soon</span>
-                <h3 className="text-3xl font-extrabold mb-4 font-heading">New Believers Bible Study</h3>
-                <p className="text-gray-400 text-lg font-medium leading-relaxed">A dedicated time for those new to faith to explore the foundations of Christianity. Details to be announced.</p>
               </div>
             </div>
           </div>
