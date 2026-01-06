@@ -119,3 +119,7 @@ dist
 
 # macOS
 .DS_Store
+
+# Lockfiles
+package-lock.json
+pnpm-lock.yaml
