@@ -20,18 +20,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
-    cssCodeSplit: true,
-    assetsInlineLimit: 0, // Disable inlining of assets
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-            return 'assets/[name]-[hash][extname]';
-          }
-          return 'assets/[name]-[hash][extname]';
-        },
-      },
-    },
+    // We can rely on default splitting now that the file is imported
   },
   server: {
     port: 3000,
