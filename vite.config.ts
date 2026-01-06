@@ -22,6 +22,8 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
+    cssCodeSplit: true, // Force CSS to be split into separate files
+    assetsInlineLimit: 0, // Disable inlining of assets to ensure files are generated
   },
   server: {
     port: 3000,
@@ -42,5 +44,3 @@ export default defineConfig({
     },
   },
 });
-
-// Force cache bust: 2026-01-06-v2
