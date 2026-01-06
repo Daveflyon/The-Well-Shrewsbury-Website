@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="text-[11px] font-black text-gray-400 uppercase tracking-[0.3em] mb-6">Call</h4>
                     <p className="text-2xl text-gray-900 font-extrabold font-heading mb-1">{CHURCH_INFO.contact.phone1}</p>
-                    <p className="text-2xl text-gray-900 font-extrabold font-heading">{CHURCH_INFO.contact.phone2}</p>
+                    
                   </div>
                   <div>
                     <h4 className="text-[11px] font-black text-gray-400 uppercase tracking-[0.3em] mb-6">Social</h4>
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
                   <input type="email" className="w-full px-8 py-5 bg-gray-50 border border-gray-200 rounded-[2rem] focus:ring-4 focus:ring-brand-500/10 focus:border-brand-500 focus:bg-white transition-all outline-none font-medium" placeholder="E.g. james@example.com" />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-black text-gray-400 uppercase tracking-[0.3em] mb-4">Inquiry</label>
+                  <label className="block text-[11px] font-black text-gray-400 uppercase tracking-[0.3em] mb-4">Enquiry</label>
                   <textarea rows={5} className="w-full px-8 py-5 bg-gray-50 border border-gray-200 rounded-[2.5rem] focus:ring-4 focus:ring-brand-500/10 focus:border-brand-500 focus:bg-white transition-all outline-none resize-none font-medium" placeholder="Tell us how we can help..."></textarea>
                 </div>
                 <button className="w-full bg-brand-500 text-white font-black py-6 rounded-[2rem] hover:bg-brand-600 transition-all duration-300 shadow-2xl shadow-brand-500/30 hover:-translate-y-2">

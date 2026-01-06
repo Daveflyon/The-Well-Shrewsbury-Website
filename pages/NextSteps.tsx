@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CHURCH_INFO } from '../constants.ts';
 
@@ -44,8 +43,8 @@ const NextSteps: React.FC = () => {
             <div className="bg-brand-500 text-white p-16 md:p-20 rounded-[4rem] shadow-3xl relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-80 h-80 bg-white/5 -ml-40 -mt-40 rounded-full blur-[120px] group-hover:scale-125 transition-transform duration-1000" />
               <h2 className="text-5xl font-black mb-10 font-heading relative z-10">Serving.</h2>
-              <p className="text-2xl opacity-90 mb-14 font-medium leading-relaxed relative z-10">
-                Connection happens best when we serve together. Find your unique fit in our community teams.
+              <p className="text-xl opacity-90 mb-10 font-medium leading-relaxed relative z-10">
+                As a Church Leadership team we actively encourage people to get involved in the life and running of the church. However for new members, our heart is to bless you, get to know you and let you drink from the Living water at The Well to start with.
               </p>
               <ul className="space-y-6 relative z-10">
                 {[
@@ -54,7 +53,7 @@ const NextSteps: React.FC = () => {
                   "Worship Arts",
                   "Children & Youth",
                   "Digital & Media",
-                  "Environment Care"
+                  "Church Cleaning"
                 ].map((item) => (
                   <li key={item} className="flex items-center text-xl font-extrabold tracking-tight font-heading">
                     <div className="w-3 h-3 rounded-full bg-brand-200 mr-5" />
@@ -62,7 +61,7 @@ const NextSteps: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <div className="mt-20 pt-10 border-t border-white/10 relative z-10">
+              <div className="mt-14 pt-10 border-t border-white/10 relative z-10">
                 <p className="text-[11px] font-black uppercase tracking-[0.3em] opacity-50 mb-3">Participation</p>
                 <p className="text-2xl font-extrabold font-heading">Speak with any leader this Sunday.</p>
               </div>
@@ -73,10 +72,15 @@ const NextSteps: React.FC = () => {
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-500/10 -mr-64 -mb-64 rounded-full blur-[150px]" />
             <h2 className="text-5xl md:text-7xl font-black mb-12 font-heading tracking-tighter relative z-10">The Mission Fund.</h2>
             <p className="text-2xl text-gray-400 max-w-3xl mx-auto mb-16 font-medium leading-relaxed relative z-10">
-              We extend our reach globally, supporting works in China, Egypt, Israel, and the Philippines. Missions giving is kept strictly separate for direct field support.
+              We extend our reach globally, supporting works in UK and Europe, Honduras, Sierra Leone, Kenya, Egypt, Israel, Montenegro, and North Korea. Missions giving is kept strictly separate for direct field support.
             </p>
-            <div className="inline-block bg-white/5 border border-white/10 text-brand-300 px-12 py-6 rounded-3xl font-black uppercase tracking-[0.3em] text-sm relative z-10 hover:bg-white/10 transition-colors cursor-default">
-              Missions Sort Code: 40-27-15
+            <div className="flex flex-col md:flex-row justify-center gap-6 relative z-10">
+              <div className="bg-white/5 border border-white/10 text-brand-300 px-12 py-6 rounded-3xl font-black uppercase tracking-[0.3em] text-sm hover:bg-white/10 transition-colors cursor-default">
+                Sort Code: 40-27-15
+              </div>
+              <div className="bg-white/5 border border-white/10 text-brand-300 px-12 py-6 rounded-3xl font-black uppercase tracking-[0.3em] text-sm hover:bg-white/10 transition-colors cursor-default">
+                Account: 35687403
+              </div>
             </div>
           </div>
         </div>
