@@ -1,9 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
-
 
 const plugins = [react(), tailwindcss()];
 
@@ -22,8 +20,18 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
-    cssCodeSplit: true, // Force CSS to be split into separate files
-    assetsInlineLimit: 0, // Disable inlining of assets to ensure files are generated
+    cssCodeSplit: true,
+    assetsInlineLimit: 0, // Disable inlining of assets
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'assets/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        },
+      },
+    },
   },
   server: {
     port: 3000,

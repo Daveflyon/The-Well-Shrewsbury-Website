@@ -47,7 +47,7 @@ const Home: React.FC = () => {
               <div className="flex items-center space-x-10">
                 <div className="flex items-center group cursor-default">
                   <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
-                    <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 h-5 text-brand-500" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
                 <div className="w-[1px] h-8 bg-gray-100"></div>
                 <div className="flex items-center group cursor-default">
                   <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
-                    <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-5 h-5 text-brand-500" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
                   </div>
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                 title: "Come as you are",
                 desc: "No dress code. No script. Just a sincere community exploring life and faith together.",
                 icon: (
-                  <svg className="w-8 h-8 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-8 h-8 text-brand-500" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 )
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                 title: "Diverse Community",
                 desc: "A tapestry of backgrounds and stories, unified by a shared experience of hope.",
                 icon: (
-                  <svg className="w-8 h-8 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-8 h-8 text-brand-500" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 )
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
                 title: "Family Focused",
                 desc: "Safe and vibrant spaces for children and youth, allowing the whole family to grow.",
                 icon: (
-                  <svg className="w-8 h-8 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-8 h-8 text-brand-500" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
                 )
@@ -151,7 +151,7 @@ const Home: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-14">
                 <div className="flex items-start">
                   <div className="bg-brand-50 p-4 rounded-2xl mr-6">
-                    <svg className="w-6 h-6 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-brand-500" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
                   </div>
@@ -162,7 +162,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="flex items-start">
                   <div className="bg-brand-50 p-4 rounded-2xl mr-6">
-                    <svg className="w-6 h-6 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-6 h-6 text-brand-500" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
@@ -175,7 +175,7 @@ const Home: React.FC = () => {
               <Link to="/contact">
                 <a className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all duration-300 shadow-2xl hover:-translate-y-1.5 cursor-pointer">
                   Get Directions
-                  <svg className="w-5 h-5 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 ml-4" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </a>
