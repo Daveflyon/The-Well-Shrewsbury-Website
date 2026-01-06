@@ -42,3 +42,5 @@ export default defineConfig({
     },
   },
 });
+
+// Force cache bust: 2026-01-06-v2
