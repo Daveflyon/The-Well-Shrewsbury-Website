@@ -14,16 +14,16 @@ export const CHURCH_INFO = {
     country: "England"
   },
   contact: {
-    phone1: "07910 - 359454",
-    
-    email: "info@thewellshrewsbury.com"
+    phone1: "01743 - 249804",
+    phone2: "07910 - 359454",
+    email: "info@wellministries.co.uk"
   },
   meetings: {
     sunday: {
       title: "Sunday Services",
       schedule: [
         { time: "10:20", event: "Doors Open" },
-        { time: "10:30", event: "Children's Bible Club (3-12) & Youth Group (13-19+)" },
+        { time: "10:30", event: "Children's Bible Club & Youth Group" },
         { time: "11:00", event: "Main Meeting (Worship, Prayer, Teaching)" },
         { time: "12:30", event: "Buffet Lunch" }
       ]

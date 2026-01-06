@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from 'wouter';
+import { Link } from 'react-router-dom';
 import { CHURCH_INFO } from '../constants.ts';
 import VisitForm from '../components/VisitForm.tsx';
 
@@ -34,13 +34,13 @@ const Home: React.FC = () => {
               
               <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
                 <Link
-                  href="/plan-your-visit"
+                  to="/plan-your-visit"
                   className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
                 >
                   Plan Your Visit
                 </Link>
                 <Link
-                  href="/sundays"
+                  to="/sundays"
                   className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                 >
                   What's On
@@ -136,7 +136,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="rounded-[3.5rem] overflow-hidden shadow-2xl aspect-[4/3] relative group">
               <img 
-                src="https://images.unsplash.com/photo-1548678967-f1fc5d33931d?auhref=format&fit=crop&q=80&w=1000" 
+                src="https://images.unsplash.com/photo-1548678967-f1fc5d33931d?auto=format&fit=crop&q=80&w=1000" 
                 alt="Shrewsbury Architecture" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
@@ -176,7 +176,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <Link
-                href="/contact"
+                to="/contact"
                 className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all duration-300 shadow-2xl hover:-translate-y-1.5"
               >
                 Get Directions
