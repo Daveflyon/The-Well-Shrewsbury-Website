@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                 </span>
               </div>
               
-              <h1 className="text-5xl sm:text-6xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading break-words">
+              <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading break-words">
                 Experience <br />
                 <span className="text-brand-500">The Well.</span>
               </h1>
