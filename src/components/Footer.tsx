@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { CHURCH_INFO } from '../constants.ts';
 
 const Footer: React.FC = () => {
@@ -18,10 +17,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-[11px] font-black text-gray-300 uppercase tracking-[0.4em] mb-10">Navigation</h4>
             <ul className="space-y-6 text-sm font-extrabold text-gray-500">
-              <li><Link to="/plan-your-visit" className="hover:text-brand-500 transition-all duration-300">Plan Your Visit</Link></li>
-              <li><Link to="/sundays" className="hover:text-brand-500 transition-all duration-300">Sunday Service</Link></li>
-              <li><Link to="/about" className="hover:text-brand-500 transition-all duration-300">Who We Are</Link></li>
-              <li><Link to="/next-steps" className="hover:text-brand-500 transition-all duration-300">Take Next Steps</Link></li>
+              <li><Link to="/plan-your-visit"><a className="hover:text-brand-500 transition-all duration-300 cursor-pointer">Plan Your Visit</a></Link></li>
+              <li><Link to="/sundays"><a className="hover:text-brand-500 transition-all duration-300 cursor-pointer">Sunday Service</a></Link></li>
+              <li><Link to="/about"><a className="hover:text-brand-500 transition-all duration-300 cursor-pointer">Who We Are</a></Link></li>
+              <li><Link to="/next-steps"><a className="hover:text-brand-500 transition-all duration-300 cursor-pointer">Take Next Steps</a></Link></li>
             </ul>
           </div>
 
@@ -29,7 +28,7 @@ const Footer: React.FC = () => {
             <h4 className="text-[11px] font-black text-gray-300 uppercase tracking-[0.4em] mb-10">Gatherings</h4>
             <p className="text-sm font-extrabold text-gray-900 mb-3 font-heading">Sundays at {CHURCH_INFO.sundayTime}</p>
             <p className="text-sm text-gray-400 font-medium mb-8 leading-relaxed">Doors open early at 10:20 for coffee and setup.</p>
-            <Link to="/plan-your-visit" className="text-brand-500 text-[11px] font-black uppercase tracking-widest hover:text-brand-600 hover:underline transition-all duration-300">Full Schedule →</Link>
+            <Link to="/plan-your-visit"><a className="text-brand-500 text-[11px] font-black uppercase tracking-widest hover:text-brand-600 hover:underline transition-all duration-300 cursor-pointer">Full Schedule →</a></Link>
           </div>
 
           <div>

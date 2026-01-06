@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'wouter';
 import { CHURCH_INFO } from '../constants.ts';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
+  const [location] = useLocation();
 
   const navItems = [
     { name: 'Plan Your Visit', path: '/plan-your-visit' },
@@ -15,7 +14,7 @@ const Header: React.FC = () => {
     { name: 'Contact', path: '/contact' }
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => location === path;
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-sm">
@@ -37,7 +36,7 @@ const Header: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 md:h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center group">
+            <Link to="/" className="flex-shrink-0 flex items-center group cursor-pointer">
               <div className="mr-3 p-1.5 bg-brand-50 rounded-lg group-hover:bg-brand-100 transition-colors">
                 <svg className="w-6 h-6 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 10V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -55,23 +54,20 @@ const Header: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-10">
             {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`text-sm font-bold tracking-tight transition-all duration-300 ${
+              <Link key={item.name} to={item.path}>
+                <a className={`text-sm font-bold tracking-tight transition-all duration-300 cursor-pointer ${
                   isActive(item.path)
                     ? 'text-brand-500'
                     : 'text-gray-500 hover:text-brand-500'
-                }`}
-              >
-                {item.name}
+                }`}>
+                  {item.name}
+                </a>
               </Link>
             ))}
-            <Link
-              to="/plan-your-visit"
-              className="bg-brand-500 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-600 transition-all duration-300 shadow-[0_8px_15px_-3px_rgba(0,51,153,0.3)] hover:shadow-[0_20px_25px_-5px_rgba(0,51,153,0.4)] hover:-translate-y-0.5"
-            >
-              Plan Your Visit
+            <Link to="/plan-your-visit">
+              <a className="bg-brand-500 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-600 transition-all duration-300 shadow-[0_8px_15px_-3px_rgba(0,51,153,0.3)] hover:shadow-[0_20px_25px_-5px_rgba(0,51,153,0.4)] hover:-translate-y-0.5 cursor-pointer">
+                Plan Your Visit
+              </a>
             </Link>
           </div>
 
@@ -97,25 +93,25 @@ const Header: React.FC = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-b border-gray-100 p-4 space-y-2 animate-in fade-in slide-in-from-top-4 duration-300">
           {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              onClick={() => setIsMenuOpen(false)}
-              className={`block px-4 py-4 text-base font-bold rounded-xl transition-all duration-300 ${
-                // Fixed: used item.path instead of non-existent variable 'path'
-                isActive(item.path) ? 'bg-brand-50 text-brand-500' : 'text-gray-600 hover:bg-gray-50 hover:text-brand-500'
-              }`}
-            >
-              {item.name}
+            <Link key={item.name} to={item.path}>
+              <a
+                onClick={() => setIsMenuOpen(false)}
+                className={`block px-4 py-4 text-base font-bold rounded-xl transition-all duration-300 cursor-pointer ${
+                  isActive(item.path) ? 'bg-brand-50 text-brand-500' : 'text-gray-600 hover:bg-gray-50 hover:text-brand-500'
+                }`}
+              >
+                {item.name}
+              </a>
             </Link>
           ))}
           <div className="pt-4 px-2">
-            <Link
-              to="/plan-your-visit"
-              onClick={() => setIsMenuOpen(false)}
-              className="block w-full text-center bg-brand-500 text-white py-4 rounded-xl font-bold shadow-lg hover:bg-brand-600 transition-all duration-300"
-            >
-              Plan Your Visit
+            <Link to="/plan-your-visit">
+              <a
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-center bg-brand-500 text-white py-4 rounded-xl font-bold shadow-lg hover:bg-brand-600 transition-all duration-300 cursor-pointer"
+              >
+                Plan Your Visit
+              </a>
             </Link>
           </div>
         </div>

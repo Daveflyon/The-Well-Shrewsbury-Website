@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'wouter';
 import { CHURCH_INFO } from '../constants.ts';
 import VisitForm from '../components/VisitForm.tsx';
 
@@ -33,17 +32,15 @@ const Home: React.FC = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
-                <Link
-                  to="/plan-your-visit"
-                  className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
-                >
-                  Plan Your Visit
+                <Link to="/plan-your-visit">
+                  <a className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0 cursor-pointer inline-block">
+                    Plan Your Visit
+                  </a>
                 </Link>
-                <Link
-                  to="/sundays"
-                  className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  What's On
+                <Link to="/sundays">
+                  <a className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer inline-block">
+                    What's On
+                  </a>
                 </Link>
               </div>
               
@@ -175,14 +172,13 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <Link
-                to="/contact"
-                className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all duration-300 shadow-2xl hover:-translate-y-1.5"
-              >
-                Get Directions
-                <svg className="w-5 h-5 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+              <Link to="/contact">
+                <a className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all duration-300 shadow-2xl hover:-translate-y-1.5 cursor-pointer">
+                  Get Directions
+                  <svg className="w-5 h-5 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
               </Link>
             </div>
           </div>
