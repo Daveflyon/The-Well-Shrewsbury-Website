@@ -135,6 +135,9 @@ const Home: React.FC = () => {
               <img 
                 src="https://images.unsplash.com/photo-1548678967-f1fc5d33931d?auto=format&fit=crop&q=80&w=1000" 
                 alt="Shrewsbury Architecture" 
+                loading="lazy"
+                width="1000"
+                height="750"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-60" />

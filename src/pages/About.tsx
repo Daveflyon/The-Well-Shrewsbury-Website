@@ -32,7 +32,7 @@ const About: React.FC = () => {
               </div>
             </div>
             <div className="rounded-[4rem] overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-all duration-700 aspect-[4/5] bg-gray-100 group">
-              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200" alt="Shrewsbury Community" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200" alt="Shrewsbury Community" loading="lazy" width="1200" height="1500" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             </div>
           </div>
 
@@ -49,6 +49,9 @@ const About: React.FC = () => {
                     <img 
                       src={person.image} 
                       alt={person.name} 
+                      loading="lazy"
+                      width="400"
+                      height="500"
                       className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000" 
                     />
                   </div>

@@ -37,7 +37,7 @@ const Sundays: React.FC = () => {
               </div>
             </div>
             <div className="rounded-[4rem] overflow-hidden shadow-2xl aspect-video bg-gray-100 relative group">
-              <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=1200" alt="Sunday Atmosphere" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=1200" alt="Sunday Atmosphere" loading="lazy" width="1200" height="675" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             </div>
           </div>
 
