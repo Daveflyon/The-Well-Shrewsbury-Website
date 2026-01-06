@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                 </span>
               </div>
               
-              <h1 className="text-7xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading">
+              <h1 className="text-5xl sm:text-6xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading break-words">
                 Experience <br />
                 <span className="text-brand-500">The Well.</span>
               </h1>
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
       <section className="py-28 bg-gray-50/50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 font-heading">Simply Welcome.</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-6 font-heading">Simply Welcome.</h2>
             <p className="text-xl text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">Our Sundays centre on people, connection and sharing life together</p>
           </div>
 
@@ -144,7 +144,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-10 font-heading leading-[1.1]">Built on <br /><span className="text-brand-500">Ancient Paths.</span></h2>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-10 font-heading leading-[1.1]">Built on <br /><span className="text-brand-500">Ancient Paths.</span></h2>
               <p className="text-xl text-gray-500 mb-12 leading-relaxed font-medium">
                 The Well is a registered Christian charity in the heart of Shrewsbury Town Square. We are committed to demonstrating the love of Christ through both word and action.
               </p>
