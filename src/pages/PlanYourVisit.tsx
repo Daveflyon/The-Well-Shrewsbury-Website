@@ -84,10 +84,14 @@ const PlanYourVisit: React.FC = () => {
                 <div className="absolute top-0 right-0 w-80 h-80 bg-brand-500/10 blur-[120px] -mr-40 -mt-40 rounded-full" />
                 <h2 className="text-4xl md:text-5xl font-black mb-10 font-heading">For the Families</h2>
                 <p className="text-xl text-gray-300 mb-14 font-medium leading-relaxed">We value our children and youth as full members of our community. We provide safe and fun environments for every age group.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                   <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Bible Club (10:30)</h4>
                     <p className="text-gray-400 font-medium leading-relaxed">Engaging crafts and age-appropriate Bible lessons. Parents are welcome to stay nearby for care needs.</p>
+                  </div>
+                  <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
+                    <h4 className="font-extrabold text-2xl mb-4 font-heading">Youth Group</h4>
+                    <p className="text-gray-400 font-medium leading-relaxed">A dedicated space for young people to connect, discuss faith, and build friendships in a supportive environment.</p>
                   </div>
                   <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Mother & Baby</h4>

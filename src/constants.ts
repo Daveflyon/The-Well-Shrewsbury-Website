@@ -43,7 +43,7 @@ export const CHURCH_INFO = {
     { name: "Harry", role: "Elder and Pastor", image: "https://picsum.photos/seed/harry/300/300" },
     { name: "James", role: "Elder and Co-Pastor", image: "https://picsum.photos/seed/james/300/300" },
     { name: "Kate", role: "Administration", image: "https://picsum.photos/seed/kate/300/300" },
-    { name: "David Agyei", role: "Teacher", image: "https://picsum.photos/seed/david/300/300" },
-    { name: "Mohammed", role: "Associate Leader", image: "https://picsum.photos/seed/mohammed/300/300" }
+    { name: "David", role: "Teacher", image: "https://picsum.photos/seed/david/300/300" },
+    { name: "Mohamed", role: "Associate Leader", image: "https://picsum.photos/seed/mohammed/300/300" }
   ]
 };
