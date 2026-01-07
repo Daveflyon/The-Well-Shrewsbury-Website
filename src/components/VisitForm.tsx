@@ -2,14 +2,36 @@
 import React, { useState } from 'react';
 
 const VisitForm: React.FC = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus('submitting');
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
-  if (submitted) {
+  if (status === 'success') {
     return (
       <div className="bg-white p-10 rounded-[2rem] shadow-2xl border border-gray-100 text-center fade-in">
         <div className="w-20 h-20 bg-brand-50 text-brand-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
@@ -18,7 +40,13 @@ const VisitForm: React.FC = () => {
           </svg>
         </div>
         <h3 className="text-3xl font-bold text-gray-900 mb-3 font-heading">See you soon!</h3>
-        <p className="text-gray-500 font-medium leading-relaxed">Thank you for letting us know. We've sent a confirmation to your email with helpful arrival details.</p>
+        <p className="text-gray-500 font-medium leading-relaxed">Thank you for letting us know. We've received your message and look forward to welcoming you.</p>
+        <button 
+          onClick={() => setStatus('idle')}
+          className="mt-8 text-brand-500 font-bold text-sm uppercase tracking-widest hover:text-brand-600"
+        >
+          Send another message
+        </button>
       </div>
     );
   }
@@ -35,6 +63,7 @@ const VisitForm: React.FC = () => {
           <input
             type="text"
             id="name"
+            name="name"
             required
             className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:ring-4 focus:ring-brand-500/10 focus:border-brand-500 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300"
             placeholder="John Smith"
@@ -45,6 +74,7 @@ const VisitForm: React.FC = () => {
           <input
             type="email"
             id="email"
+            name="email"
             required
             className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:ring-4 focus:ring-brand-500/10 focus:border-brand-500 focus:bg-white transition-all outline-none font-medium placeholder:text-gray-300"
             placeholder="john@example.com"
@@ -54,6 +84,7 @@ const VisitForm: React.FC = () => {
           <label htmlFor="message" className="block text-[10px] font-extrabold text-gray-400 uppercase tracking-widest mb-2">Any questions? (Optional)</label>
           <textarea
             id="message"
+            name="message"
             rows={2}
             className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:ring-4 focus:ring-brand-500/10 focus:border-brand-500 focus:bg-white transition-all outline-none resize-none font-medium placeholder:text-gray-300"
             placeholder="Parking info, kids groups, etc."
@@ -61,11 +92,19 @@ const VisitForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-brand-500 text-white font-extrabold py-5 rounded-xl hover:bg-brand-600 shadow-lg shadow-brand-500/20 hover:shadow-2xl hover:shadow-brand-500/40 transition-all duration-300 hover:-translate-y-1"
+          disabled={status === 'submitting'}
+          className="w-full bg-brand-500 text-white font-extrabold py-5 rounded-xl hover:bg-brand-600 shadow-lg shadow-brand-500/20 hover:shadow-2xl hover:shadow-brand-500/40 transition-all duration-300 hover:-translate-y-1 disabled:opacity-70 disabled:cursor-not-allowed"
         >
-          Send My Plan
+          {status === 'submitting' ? 'Sending...' : 'Send My Plan'}
         </button>
-        <p className="text-center text-[10px] font-bold text-gray-300 uppercase tracking-widest">Safe & Secure Community</p>
+        
+        {status === 'error' && (
+          <p className="text-red-500 text-sm font-bold text-center mt-4">
+            Something went wrong. Please try again or email us directly.
+          </p>
+        )}
+        
+        <p className="text-center text-[10px] font-bold text-gray-300 uppercase tracking-widest mt-4">Safe & Secure Community</p>
       </form>
     </div>
   );
