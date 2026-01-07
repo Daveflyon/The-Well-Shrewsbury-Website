@@ -14,8 +14,8 @@ export const CHURCH_INFO = {
     country: "England"
   },
   contact: {
-    phone1: "01743 - 249804",
-    phone2: "07910 - 359454",
+    phone1: "07910 359454",
+    phone2: "",
     email: "info@wellministries.co.uk"
   },
   meetings: {
