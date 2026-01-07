@@ -17,7 +17,7 @@ const Home: React.FC = () => {
             <div className="lg:col-span-7 fade-in">
               <div className="flex items-center space-x-3 mb-10">
                 <span className="w-12 h-[1px] bg-brand-500"></span>
-                <span className="text-brand-500 text-[11px] font-black tracking-[0.3em] uppercase">
+                <span className="text-brand-500 text-xs sm:text-sm font-black tracking-[0.25em] uppercase">
                   Shrewsbury Town Square
                 </span>
               </div>
