@@ -35,17 +35,14 @@ const Header: React.FC = () => {
       </div>
 
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 md:h-20">
+        <div className="flex justify-between h-[4.25rem] md:h-[5.5rem]">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center group">
-              <div className="mr-3 p-1.5 bg-brand-50 rounded-lg group-hover:bg-brand-100 transition-colors">
-                <svg className="w-6 h-6 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 10V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M2 10H22L12 4L2 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 10V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <circle cx="12" cy="14" r="2" fill="currentColor"/>
-                </svg>
-              </div>
+              <img
+                src="/images/the-well-mark.png"
+                alt="The Well Shrewsbury logo"
+                className="mr-3.5 h-10 w-auto shrink-0 object-contain md:mr-4 md:h-[52px]"
+              />
               <span className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900 group-hover:text-brand-500 transition-colors duration-300 font-heading">
                 The Well <span className="text-brand-500 font-light mx-0.5">/</span> Shrewsbury
               </span>

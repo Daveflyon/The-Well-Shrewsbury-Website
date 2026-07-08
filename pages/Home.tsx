@@ -31,6 +31,9 @@ const Home: React.FC = () => {
               <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
                 A community defined by peace, rooted in faith, and located in the historic heart of Shrewsbury.
               </p>
+              <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
+                Jesus Christ is good news. Our goal is to bring His message of hope to everyone.
+              </p>
               
               <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
                 <Link
@@ -136,14 +139,14 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div className="rounded-[3.5rem] overflow-hidden shadow-2xl aspect-[4/3] relative group">
               <img 
-                src="https://images.unsplash.com/photo-1548678967-f1fc5d33931d?auto=format&fit=crop&q=80&w=1000" 
-                alt="Shrewsbury Architecture" 
+                src="/images/the-well-sign.jpg" 
+                alt="The Well sign, Shrewsbury" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-60" />
-              <div className="absolute bottom-12 left-12 text-white">
-                <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-3 opacity-80">Community Presence</p>
-                <h4 className="text-3xl font-extrabold font-heading">A Shrewsbury Staple.</h4>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/85 via-gray-900/25 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 sm:bottom-12 sm:left-12 sm:right-auto text-white">
+                <p className="text-[10px] font-black tracking-[0.3em] uppercase mb-2 sm:mb-3 opacity-80">Community Presence</p>
+                <h4 className="text-2xl sm:text-3xl font-extrabold font-heading">A Shrewsbury Staple.</h4>
               </div>
             </div>
             <div>

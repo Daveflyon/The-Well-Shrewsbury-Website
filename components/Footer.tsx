@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-[11px] font-black text-gray-300 uppercase tracking-[0.4em] mb-10">Gatherings</h4>
             <p className="text-sm font-extrabold text-gray-900 mb-3 font-heading">Sundays at {CHURCH_INFO.sundayTime}</p>
-            <p className="text-sm text-gray-400 font-medium mb-8 leading-relaxed">Doors open early at 10:20 for coffee and setup.</p>
+            <p className="text-sm text-gray-400 font-medium mb-8 leading-relaxed">Doors open early at 10:20 for setup and welcome.</p>
             <Link to="/plan-your-visit" className="text-brand-500 text-[11px] font-black uppercase tracking-widest hover:text-brand-600 hover:underline transition-all duration-300">Full Schedule →</Link>
           </div>
 
@@ -44,11 +44,7 @@ const Footer: React.FC = () => {
 
         <div className="pt-16 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center text-[11px] font-black text-gray-300 uppercase tracking-[0.3em]">
           <p>© {new Date().getFullYear()} {CHURCH_INFO.name}.</p>
-          <div className="flex space-x-10 mt-8 md:mt-0">
-            <a href="#" className="hover:text-brand-500 transition-all duration-300">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-500 transition-all duration-300">Terms</a>
-            <a href="#" className="hover:text-brand-500 transition-all duration-300">Charity #123456</a>
-          </div>
+          <p className="mt-8 md:mt-0 normal-case tracking-[0.15em]">Registered Charity No. 1087896</p>
         </div>
       </div>
     </footer>

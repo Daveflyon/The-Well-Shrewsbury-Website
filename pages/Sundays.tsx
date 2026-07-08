@@ -3,6 +3,8 @@ import React from 'react';
 import { CHURCH_INFO } from '../constants.ts';
 
 const Sundays: React.FC = () => {
+  const morningGroups = CHURCH_INFO.meetings.sunday.schedule.find((item) => item.time === "10:30");
+
   return (
     <div className="flex flex-col">
       <section className="py-24 bg-white">
@@ -14,13 +16,30 @@ const Sundays: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
-            {CHURCH_INFO.meetings.sunday.schedule.map((item, idx) => (
-              <div key={idx} className="bg-gray-50 p-12 rounded-[2.5rem] border border-gray-100 flex flex-col items-center text-center group hover:bg-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
-                <span className="text-brand-500 font-black text-4xl mb-5 font-heading tracking-tighter">{item.time}</span>
-                <span className="text-gray-900 font-extrabold text-xl leading-tight tracking-tight font-heading">{item.event}</span>
+          <div className="mb-32 lg:max-w-6xl lg:mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {CHURCH_INFO.meetings.sunday.schedule.map((item, idx) => (
+                <div key={idx} className="bg-gray-50 p-12 rounded-[2.5rem] border border-gray-100 flex flex-col items-center text-center group hover:bg-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                  <span className="text-brand-500 font-black text-4xl mb-5 font-heading tracking-tighter">{item.time}</span>
+                  <span className="text-gray-900 font-extrabold text-xl leading-tight tracking-tight font-heading">{item.event}</span>
+                </div>
+              ))}
+            </div>
+
+            {'streams' in (morningGroups ?? {}) && (
+              <div className="mt-8 bg-gray-50 border border-gray-100 p-12 md:p-16 rounded-[3rem] shadow-sm">
+                <p className="text-2xl text-gray-900 font-extrabold leading-relaxed font-heading mb-8">
+                  At 10:30, three groups run side by side. Join the one that fits you.
+                </p>
+                <div className="space-y-4">
+                  {morningGroups.streams.map((stream) => (
+                    <p key={stream.label} className="text-lg md:text-xl text-gray-500 font-medium leading-relaxed whitespace-normal md:whitespace-nowrap">
+                      <span className="text-gray-900 font-extrabold">{stream.label}</span>, {stream.description}
+                    </p>
+                  ))}
+                </div>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mb-48">
@@ -53,10 +72,31 @@ const Sundays: React.FC = () => {
                   <p className="text-gray-400 text-xl font-medium leading-relaxed">{CHURCH_INFO.meetings.tuesday.description}</p>
                 </div>
                 <div className="bg-white/5 p-16 rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500">
-                  <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.3em] block mb-8">Wednesdays • {CHURCH_INFO.meetings.wednesday.time}</span>
-                  <h3 className="text-4xl font-extrabold mb-8 font-heading">{CHURCH_INFO.meetings.wednesday.title}</h3>
-                  <p className="text-gray-400 text-xl font-medium leading-relaxed">{CHURCH_INFO.meetings.wednesday.description}</p>
+                  <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.3em] block mb-8">New Midweek Schedule</span>
+                  <h3 className="text-4xl font-extrabold mb-8 font-heading">Wednesdays. Two studies each week. Now running.</h3>
+                  <div className="space-y-8 text-gray-400 text-xl font-medium leading-relaxed">
+                    <p>
+                      <strong className="text-white">Marriage &amp; Relationship Study, 7:00 to 8:00pm.</strong> Building stronger, Christ-centred relationships and homes. For adults and married couples.
+                    </p>
+                    <p>
+                      <strong className="text-white">Main Church Bible Study, 8:00 to 9:00pm.</strong> Going deeper into God's Word together as one church family. All are welcome.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-32">
+            <div className="max-w-4xl">
+              <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-10 font-heading tracking-tight">Church Events.</h2>
+              <div className="bg-gray-50 border border-gray-100 p-12 md:p-16 rounded-[3rem] shadow-sm">
+                <p className="text-[11px] font-black text-brand-500 uppercase tracking-[0.3em] mb-6">Church Events</p>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 font-heading tracking-tight">Bible Truth Foundations - Part 1: New Life in Christ. Now running.</h3>
+                <p className="text-xl text-gray-500 font-medium leading-relaxed mb-6">16 lessons across 4 key sections, Sundays 10:30 to 11:00am.</p>
+                <p className="text-xl text-gray-500 font-medium leading-relaxed">
+                  For new believers wanting solid biblical grounding, and long-term Christians strengthening their foundations. We explore who God really is, what He is truly like, when eternal life begins, and much more.
+                </p>
               </div>
             </div>
           </div>

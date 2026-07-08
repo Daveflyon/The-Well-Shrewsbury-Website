@@ -1,7 +1,7 @@
 
 export const CHURCH_INFO = {
   name: "Well Ministries – Shrewsbury",
-  location: "3A The Square, Shrewsbury, SY1 1LA",
+  location: "3A The Square, Shrewsbury, SY1\u00A01LA",
   shortLocation: "Shrewsbury Town Square",
   sundayTime: "11:00 (Doors 10:20)",
   bibleClubTime: "10:30",
@@ -10,22 +10,29 @@ export const CHURCH_INFO = {
     line2: "3A The Square",
     city: "Shrewsbury",
     county: "Shropshire",
-    postcode: "SY1 1LA",
+    postcode: "SY1\u00A01LA",
     country: "England"
   },
   contact: {
-    phone1: "01743 - 249804",
+    phone1: "07910 - 359454",
     phone2: "07910 - 359454",
-    email: "info@wellministries.co.uk"
+    email: "info@thewellshrewsbury.com"
   },
   meetings: {
     sunday: {
       title: "Sunday Services",
       schedule: [
         { time: "10:20", event: "Doors Open" },
-        { time: "10:30", event: "Children's Bible Club & Youth Group" },
-        { time: "11:00", event: "Main Meeting (Worship, Prayer, Teaching)" },
-        { time: "12:30", event: "Buffet Lunch" }
+        {
+          time: "10:30",
+          event: "Morning Groups",
+          streams: [
+            { label: "Children's Bible Club", description: "for children" },
+            { label: "Youth Group", description: "for young people" },
+            { label: "Bible Truth Foundations", description: "for adults" }
+          ]
+        },
+        { time: "11:00", event: "Main Meeting (Worship, Prayer, Teaching)" }
       ]
     },
     tuesday: {
@@ -40,10 +47,10 @@ export const CHURCH_INFO = {
     }
   },
   leadership: [
-    { name: "Harry", role: "Elder and Pastor", image: "" },
-    { name: "James", role: "Elder and Co-Pastor", image: "" },
-    { name: "Kate", role: "Administration", image: "" },
-    { name: "David", role: "Teacher", image: "" },
-    { name: "Mohamed", role: "Associate Leader", image: "" }
+    { name: "Harry", role: "Elder and Pastor", image: "/images/Harry.png", email: "harry@thewellshrewsbury.com" },
+    { name: "James", role: "Elder and Co-Pastor", image: "/images/James.png", email: "james@thewellshrewsbury.com" },
+    { name: "Kate", role: "Administration", image: "/images/Kate.png" },
+    { name: "David", role: "Teacher", image: "/images/David.jpg" },
+    { name: "Mohamed", role: "Associate Leader", image: "/images/Mohamed.png" }
   ]
 };

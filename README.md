@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# The Well Shrewsbury Website
 
-# Run and deploy your AI Studio app
+Static church website for The Well, Shrewsbury (React + TypeScript + Vite).
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1StsKdyfQrq7Q8jz62v869L-pGAN7iOrd
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Create `.env.local` in the project root and set your Web3Forms access key:
+   ```
+   VITE_WEB3FORMS_KEY=YOUR_ACCESS_KEY_HERE
+   ```
+   Get a free key at [web3forms.com](https://web3forms.com). Replace the placeholder with your real key before testing form submissions.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000).
+
+## Production build
+
+```bash
+npm run build
+```
+
+The output is written to `dist/`. Deploy that folder to Hostinger (or any static host).
+
+## Environment variables
+
+| Variable | Required | Notes |
+|----------|----------|-------|
+| `VITE_WEB3FORMS_KEY` | Yes, for forms | Used by the Plan Your Visit and Contact forms. Set in `.env.local` for local builds, and also set as an environment variable on Hostinger before deploying, then rebuild so Vite can embed it. |
+
+`.env.local` is gitignored via `*.local` — do not commit real keys.

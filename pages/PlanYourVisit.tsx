@@ -53,8 +53,8 @@ const PlanYourVisit: React.FC = () => {
                   Parking & Arrival
                 </h2>
                 <div className="text-xl text-gray-500 font-medium leading-relaxed space-y-8">
-                  <p>Being central, there is plenty of public parking. We suggest <strong className="text-gray-900">St Julian's Friars</strong> or <strong className="text-gray-900">Abbey Foregate</strong> car parks—both are within a short walk of The Well.</p>
-                  <p>Our welcome team will be at the main doors to greet you, answer any questions, and direct you to the main meeting space.</p>
+                  <p>There is free parking at <strong className="text-gray-900">Frankwell</strong> car park, just a five minute walk to The Well. Parking there is free all day on Sundays and bank holidays, and free every day between 6:00pm and 8:00am.</p>
+                  <p>If you would rather park closer, there are two council car parks near <strong className="text-gray-900">Rowley's House</strong> a short distance away; please note these are pay and display.</p>
                 </div>
               </div>
 
@@ -68,8 +68,7 @@ const PlanYourVisit: React.FC = () => {
                   {[
                     { title: "Service Format", desc: "A blend of sincere worship, community prayer, and relevant teaching from the Bible." },
                     { title: "Dress Code", desc: "Come as you feel comfortable. We are a relaxed community with no formal dress expectations." },
-                    { title: "Accessibility", desc: "The building is fully accessible. Please let our team know if you need any specific assistance." },
-                    { title: "Community Lunch", desc: "Stay for a free buffet lunch after the service. It's a wonderful way to meet others." }
+                    { title: "Accessibility", desc: "The building is fully accessible. Please let our team know if you need any specific assistance." }
                   ].map(item => (
                     <div key={item.title} className="bg-gray-50 p-10 rounded-[2.5rem] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-xl transition-all duration-500">
                       <h4 className="font-extrabold text-gray-900 text-xl mb-3 font-heading tracking-tight">{item.title}</h4>
@@ -91,7 +90,7 @@ const PlanYourVisit: React.FC = () => {
                   </div>
                   <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Mother & Baby</h4>
-                    <p className="text-gray-400 font-medium leading-relaxed">A quiet and dedicated room upstairs equipped with toys and comfortable seating for your convenience.</p>
+                    <p className="text-gray-400 font-medium leading-relaxed">A quiet, dedicated room upstairs with comfortable seating, so you can settle your little one and still feel part of the morning.</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +108,7 @@ const PlanYourVisit: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-black text-gray-900 text-[11px] mb-2 uppercase tracking-[0.2em]">Admission</p>
-                      <p className="text-gray-500 font-medium text-sm">All our services and Sunday meals are free of charge.</p>
+                      <p className="text-gray-500 font-medium text-sm">All our services are free of charge.</p>
                     </div>
                     <div>
                       <p className="font-black text-gray-900 text-[11px] mb-2 uppercase tracking-[0.2em]">The Atmosphere</p>
@@ -120,7 +119,7 @@ const PlanYourVisit: React.FC = () => {
                 <div className="bg-brand-50 p-12 rounded-[3rem] border border-brand-100">
                   <h3 className="text-2xl font-black text-brand-900 mb-6 font-heading tracking-tight">Need Support?</h3>
                   <p className="text-brand-800 font-medium text-sm leading-relaxed mb-8">If you have specific needs or require transport assistance, we are here to help.</p>
-                  <a href={`tel:${CHURCH_INFO.contact.phone1}`} className="inline-flex items-center text-brand-500 font-black text-sm uppercase tracking-widest hover:translate-x-2 transition-transform duration-300">
+                  <a href={`tel:${CHURCH_INFO.contact.phone1.replace(/[^\d+]/g, '')}`} className="inline-flex items-center text-brand-500 font-black text-sm uppercase tracking-widest hover:translate-x-2 transition-transform duration-300">
                     Get in touch →
                   </a>
                 </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { CHURCH_INFO } from '../constants.ts';
 
 const NextSteps: React.FC = () => {
   return (
@@ -25,23 +24,8 @@ const NextSteps: React.FC = () => {
               <div className="absolute top-0 left-0 w-80 h-80 bg-white/5 -ml-40 -mt-40 rounded-full blur-[120px] group-hover:scale-125 transition-transform duration-1000" />
               <h2 className="text-5xl font-black mb-10 font-heading relative z-10">Serving.</h2>
               <p className="text-2xl opacity-90 mb-14 font-medium leading-relaxed relative z-10">
-                Connection happens best when we serve together. Find your unique fit in our community teams.
+                Life at The Well is shared life. As you settle in and we get to know one another, you will find many natural ways to serve the church family and the wider community. There is no rush; take your time to find where you belong.
               </p>
-              <ul className="space-y-6 relative z-10">
-                {[
-                  "Greeting & Connections",
-                  "Hospitality & Catering",
-                  "Worship Arts",
-                  "Children & Youth",
-                  "Digital & Media",
-                  "Serving"
-                ].map((item) => (
-                  <li key={item} className="flex items-center text-xl font-extrabold tracking-tight font-heading">
-                    <div className="w-3 h-3 rounded-full bg-brand-200 mr-5" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
               <div className="mt-20 pt-10 border-t border-white/10 relative z-10">
                 <p className="text-[11px] font-black uppercase tracking-[0.3em] opacity-50 mb-3">Participation</p>
                 <p className="text-2xl font-extrabold font-heading">Speak with any leader this Sunday.</p>
