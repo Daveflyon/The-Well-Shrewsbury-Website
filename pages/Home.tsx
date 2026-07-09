@@ -29,7 +29,7 @@ const Home: React.FC = () => {
               </h1>
               
               <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
-                A community defined by peace, rooted in faith, and located in the historic heart of Shrewsbury.
+                A community defined by peace, rooted in the Christian faith, and located in the historic heart of Shrewsbury.
               </p>
               <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
                 Jesus Christ is good news. Our goal is to bring His message of hope to everyone.
