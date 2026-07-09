@@ -68,7 +68,7 @@ const PlanYourVisit: React.FC = () => {
                   {[
                     { title: "Service Format", desc: "A blend of sincere worship, community prayer, and relevant teaching from the Bible." },
                     { title: "Dress Code", desc: "Come as you feel comfortable. We are a relaxed community with no formal dress expectations." },
-                    { title: "Accessibility", desc: "The building is fully accessible. Please let our team know if you need any specific assistance." }
+                    { title: "Accessibility", desc: "We meet upstairs, reached by a staircase. If you have any access needs, please let us know before you visit and we'll be glad to help you find the best way in." }
                   ].map(item => (
                     <div key={item.title} className="bg-gray-50 p-10 rounded-[2.5rem] border border-transparent hover:border-brand-100 hover:bg-white hover:shadow-xl transition-all duration-500">
                       <h4 className="font-extrabold text-gray-900 text-xl mb-3 font-heading tracking-tight">{item.title}</h4>
