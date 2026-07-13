@@ -17,8 +17,8 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-48 items-start">
-            <div className="bg-gray-50 p-16 md:p-20 rounded-[4rem] border border-gray-100 shadow-sm relative overflow-hidden h-full flex flex-col justify-center">
+          <div className="mb-48 space-y-12">
+            <div className="bg-gray-50 p-16 md:p-20 rounded-[4rem] border border-gray-100 shadow-sm relative overflow-hidden flex flex-col justify-center">
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500/5 blur-3xl -mr-32 -mt-32 rounded-full"></div>
               <h2 className="text-4xl font-black text-gray-900 mb-10 font-heading">Our Global Vision</h2>
               <p className="text-3xl text-brand-500 font-black mb-10 italic font-heading tracking-tight">"Unto the Nations"</p>
@@ -34,15 +34,13 @@ const About: React.FC = () => {
                 ))}
               </div>
             </div>
-            
-            <div className="flex flex-col">
-              <div className="rounded-[4rem] overflow-hidden border border-gray-100 shadow-sm aspect-[4/5] bg-gray-50">
-                <img
-                  src="/images/church-room.jpg"
-                  alt="The Well church meeting room in Shrewsbury"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+
+            <div className="rounded-[2.5rem] md:rounded-[4rem] overflow-hidden border border-gray-100 shadow-sm bg-gray-50">
+              <img
+                src="/images/church-room.jpg"
+                alt="The Well church meeting room in Shrewsbury"
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
 
