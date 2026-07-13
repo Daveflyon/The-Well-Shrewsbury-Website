@@ -35,14 +35,14 @@ const About: React.FC = () => {
               </div>
             </div>
             
-            {/* Main Vision Placeholder - Strictly Neutral */}
             <div className="flex flex-col">
-              <div className="rounded-[4rem] overflow-hidden border-2 border-dashed border-gray-100 bg-gray-50/30 aspect-[4/5] flex items-center justify-center transition-colors hover:bg-gray-50/50">
-                <svg className="w-16 h-16 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+              <div className="rounded-[4rem] overflow-hidden border border-gray-100 shadow-sm aspect-[4/5] bg-gray-50">
+                <img
+                  src="/images/church-room.jpg"
+                  alt="The Well church meeting room in Shrewsbury"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <p className="mt-8 text-[11px] font-black text-gray-400 uppercase tracking-[0.4em] text-center">Photo coming soon</p>
             </div>
           </div>
 
