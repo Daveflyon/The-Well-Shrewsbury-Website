@@ -64,6 +64,7 @@ const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            <a href="https://thewelloswestry.uk/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold tracking-tight text-gray-500 hover:text-brand-500 transition-all duration-300">Oswestry</a>
             <Link
               to="/plan-your-visit"
               className="bg-brand-500 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-600 transition-all duration-300 shadow-[0_8px_15px_-3px_rgba(0,51,153,0.3)] hover:shadow-[0_20px_25px_-5px_rgba(0,51,153,0.4)] hover:-translate-y-0.5"
@@ -106,6 +107,7 @@ const Header: React.FC = () => {
               {item.name}
             </Link>
           ))}
+          <a href="https://thewelloswestry.uk/" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)} className="block px-4 py-4 text-base font-bold rounded-xl text-gray-600 hover:bg-gray-50 hover:text-brand-500 transition-all duration-300">Oswestry</a>
           <div className="pt-4 px-2">
             <Link
               to="/plan-your-visit"
