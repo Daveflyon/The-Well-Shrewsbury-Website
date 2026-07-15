@@ -42,7 +42,7 @@ const Sundays: React.FC = () => {
             )}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center mb-24 md:mb-48">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-24 md:mb-48">
             <div className="fade-in min-w-0">
               <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-6 md:mb-10 font-heading tracking-tight">Worship & Word.</h2>
               <p className="text-lg sm:text-2xl text-gray-500 mb-8 md:mb-12 leading-relaxed font-medium">
