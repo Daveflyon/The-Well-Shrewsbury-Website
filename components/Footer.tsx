@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CHURCH_INFO } from '../constants.ts';
@@ -22,6 +21,7 @@ const Footer: React.FC = () => {
               <li><Link to="/sundays" className="hover:text-brand-500 transition-all duration-300">Sunday Service</Link></li>
               <li><Link to="/about" className="hover:text-brand-500 transition-all duration-300">Who We Are</Link></li>
               <li><Link to="/next-steps" className="hover:text-brand-500 transition-all duration-300">Take Next Steps</Link></li>
+              <li><a href="https://thewelloswestry.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-all duration-300">The Well Oswestry</a></li>
             </ul>
           </div>
 
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             <h4 className="text-[11px] font-black text-gray-300 uppercase tracking-[0.4em] mb-10">Gatherings</h4>
             <p className="text-sm font-extrabold text-gray-900 mb-3 font-heading">Sundays at {CHURCH_INFO.sundayTime}</p>
             <p className="text-sm text-gray-400 font-medium mb-8 leading-relaxed">Doors open early at 10:20 for setup and welcome.</p>
-            <Link to="/plan-your-visit" className="text-brand-500 text-[11px] font-black uppercase tracking-widest hover:text-brand-600 hover:underline transition-all duration-300">Full Schedule →</Link>
+            <Link to="/plan-your-visit" className="text-brand-500 text-[11px] font-black uppercase tracking-widest hover:text-brand-600 hover:underline transition-all duration-300">Full Schedule &rarr;</Link>
           </div>
 
           <div>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-16 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center text-[11px] font-black text-gray-300 uppercase tracking-[0.3em]">
-          <p>© {new Date().getFullYear()} {CHURCH_INFO.name}.</p>
+          <p>&copy; {new Date().getFullYear()} {CHURCH_INFO.name}.</p>
           <p className="mt-8 md:mt-0 normal-case tracking-[0.15em]">Registered Charity No. 1087896</p>
         </div>
       </div>

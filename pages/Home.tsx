@@ -92,8 +92,8 @@ const Home: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
               <div className="bg-white aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:h-full lg:min-h-[22rem] flex items-center justify-center p-5 sm:p-6 md:p-8 lg:p-10">
                 <img
-                  src="/images/jesus-and-well.png"
-                  alt="Jesus and the well"
+                  src="/images/well-and-cross.png"
+                  alt="The Well logo with hands holding a cross"
                   className="max-h-full max-w-full h-full w-full object-contain object-center"
                 />
               </div>

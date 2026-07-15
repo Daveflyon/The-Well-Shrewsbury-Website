@@ -38,7 +38,7 @@ const NextSteps: React.FC = () => {
             <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-500/10 -mr-64 -mb-64 rounded-full blur-[150px]" />
             <h2 className="text-5xl md:text-7xl font-black mb-12 font-heading tracking-tighter relative z-10">The Mission Fund.</h2>
             <p className="text-2xl text-gray-400 max-w-4xl mx-auto font-medium leading-relaxed relative z-10">
-              We extend our reach globally, supporting works in UK and Europe, Honduras, Sierra Leone, Kenya, Egypt, Israel, Montenegro, the Philippines and North Korea. Missions giving is kept strictly separate for direct field support.
+              We extend our reach globally, supporting works in UK and Europe, Honduras, Sierra Leone, Kenya, Israel, Montenegro, the Philippines and North Korea. Missions giving is kept strictly separate for direct field support.
             </p>
           </div>
         </div>

@@ -56,7 +56,7 @@ const Sundays: React.FC = () => {
               </div>
             </div>
             <div className="rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl aspect-video bg-gray-100 relative group">
-              <img src="/images/jesus-and-well.png" alt="Jesus and the well" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <img src="/images/church-room.jpg" alt="The Well congregation gathered for Sunday worship" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
             </div>
           </div>
 
@@ -105,5 +105,4 @@ const Sundays: React.FC = () => {
     </div>
   );
 };
-
 export default Sundays;
