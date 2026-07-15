@@ -42,22 +42,22 @@ const Sundays: React.FC = () => {
             )}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch mb-24 md:mb-48">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-12 lg:mb-16">
             <div className="fade-in min-w-0">
               <h2 className="text-3xl sm:text-5xl font-black text-gray-900 mb-6 md:mb-10 font-heading tracking-tight">Worship & Word.</h2>
-              <p className="text-lg sm:text-2xl text-gray-500 mb-8 md:mb-12 leading-relaxed font-medium">
+              <p className="text-lg sm:text-2xl text-gray-500 mb-0 leading-relaxed font-medium">
                 Our main meeting is centered around sincere worship and sharing truth from the Bible. It is a time of spiritual growth and personal refreshment.
               </p>
-              <div className="bg-brand-500 p-6 sm:p-12 rounded-[2rem] md:rounded-[3rem] shadow-2xl shadow-brand-500/25 text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 -mr-24 -mt-24 rounded-full blur-3xl" />
-                <p className="text-xl sm:text-3xl font-extrabold italic mb-0 font-heading leading-tight tracking-tight relative z-10">
-                  "Our heart is for every person to find their place in God's story."
-                </p>
-              </div>
             </div>
-            <div className="rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl aspect-video lg:aspect-auto lg:h-full bg-gray-100 relative group">
-              <img src="/images/church-room.jpg" alt="The Well congregation gathered for Sunday worship" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+            <div className="rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl bg-gray-100 relative group">
+              <img src="/images/church-room.jpg" alt="The Well congregation gathered for Sunday worship" className="w-full h-auto transition-transform duration-1000 group-hover:scale-105" />
             </div>
+          </div>
+          <div className="bg-brand-500 p-6 sm:p-12 rounded-[2rem] md:rounded-[3rem] shadow-2xl shadow-brand-500/25 text-white relative overflow-hidden mb-24 md:mb-48">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 -mr-24 -mt-24 rounded-full blur-3xl" />
+            <p className="text-xl sm:text-3xl font-extrabold italic mb-0 font-heading leading-tight tracking-tight relative z-10">
+              "Our heart is for every person to find their place in God's story."
+            </p>
           </div>
 
           {/* Midweek Activities */}
