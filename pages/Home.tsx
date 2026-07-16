@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             </div>
             
             <h1 className="w-full text-5xl sm:text-6xl md:text-7xl lg:text-[3.75rem] xl:text-[4.5rem] 2xl:text-[5.25rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading">
-              Experience <span className="text-brand-500">The Well.</span>
+              Experience <br className="lg:hidden" /><span className="text-brand-500">The Well.</span>
             </h1>
 
             <div className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-gray-100 mb-12">
@@ -55,15 +55,24 @@ const Home: React.FC = () => {
               </div>
 
               <div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10">
-                  <div className="flex flex-col items-start">
+                {/* Mobile: buttons stacked full width, then details row (original layout) */}
+                <div className="lg:hidden">
+                  <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-10">
                     <Link
                       to="/plan-your-visit"
                       className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
                     >
                       Plan Your Visit
                     </Link>
-                    <div className="flex items-center mt-8 group cursor-default">
+                    <Link
+                      to="/sundays"
+                      className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    >
+                      What's On
+                    </Link>
+                  </div>
+                  <div className="flex items-center space-x-10">
+                    <div className="flex items-center group cursor-default">
                       <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
                         <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -74,16 +83,8 @@ const Home: React.FC = () => {
                         <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.sundayTime}</span>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="flex flex-col items-start">
-                    <Link
-                      to="/sundays"
-                      className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                    >
-                      What's On
-                    </Link>
-                    <div className="flex items-center mt-8 group cursor-default">
+                    <div className="w-[1px] h-8 bg-gray-100"></div>
+                    <div className="flex items-center group cursor-default">
                       <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
                         <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -92,6 +93,51 @@ const Home: React.FC = () => {
                       <div className="flex flex-col">
                         <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</span>
                         <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.shortLocation}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop: each button aligned directly above its detail */}
+                <div className="hidden lg:block">
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-10">
+                    <div className="flex flex-col items-start">
+                      <Link
+                        to="/plan-your-visit"
+                        className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
+                      >
+                        Plan Your Visit
+                      </Link>
+                      <div className="flex items-center mt-8 group cursor-default">
+                        <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
+                          <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div className="flex flex-col">
+                          <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Sundays</span>
+                          <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.sundayTime}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col items-start">
+                      <Link
+                        to="/sundays"
+                        className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                      >
+                        What's On
+                      </Link>
+                      <div className="flex items-center mt-8 group cursor-default">
+                        <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
+                          <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          </svg>
+                        </div>
+                        <div className="flex flex-col">
+                          <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</span>
+                          <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.shortLocation}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
