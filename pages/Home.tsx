@@ -7,6 +7,29 @@ import VisitForm from '../components/VisitForm.tsx';
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
+      {/* Scripture Feature */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-gray-100">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
+              <div className="bg-white aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:h-full lg:min-h-[22rem] flex items-center justify-center p-5 sm:p-6 md:p-8 lg:p-10">
+                <img
+                  src="/images/well-and-cross-hd.png"
+                  alt="The Well logo with hands holding a cross"
+                  className="max-h-full max-w-full h-full w-full object-contain object-center"
+                />
+              </div>
+              <div className="bg-gray-900 text-white p-10 sm:p-14 md:p-16 lg:p-20 flex flex-col justify-center">
+                <blockquote className="text-2xl sm:text-3xl md:text-4xl font-extrabold italic leading-tight font-heading mb-8">
+                  &ldquo;I have come that they may have life, and have it to the full.&rdquo;
+                </blockquote>
+                <p className="text-brand-300 font-black text-sm uppercase tracking-[0.25em]">John 10:10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Redesigned Hero Section */}
       <section className="relative pt-20 pb-28 md:pt-36 md:pb-48 overflow-hidden bg-white">
         {/* Premium Background Elements */}
@@ -80,29 +103,6 @@ const Home: React.FC = () => {
             <div className="lg:col-span-5 lg:pl-4 relative">
               <div className="absolute -inset-10 bg-brand-500/5 blur-[120px] rounded-full pointer-events-none"></div>
               <VisitForm />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Scripture Feature */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-gray-100">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
-              <div className="bg-white aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:h-full lg:min-h-[22rem] flex items-center justify-center p-5 sm:p-6 md:p-8 lg:p-10">
-                <img
-                  src="/images/well-and-cross-hd.png"
-                  alt="The Well logo with hands holding a cross"
-                  className="max-h-full max-w-full h-full w-full object-contain object-center"
-                />
-              </div>
-              <div className="bg-gray-900 text-white p-10 sm:p-14 md:p-16 lg:p-20 flex flex-col justify-center">
-                <blockquote className="text-2xl sm:text-3xl md:text-4xl font-extrabold italic leading-tight font-heading mb-8">
-                  &ldquo;I have come that they may have life, and have it to the full.&rdquo;
-                </blockquote>
-                <p className="text-brand-300 font-black text-sm uppercase tracking-[0.25em]">John 10:10</p>
-              </div>
             </div>
           </div>
         </div>
