@@ -26,6 +26,24 @@ const Home: React.FC = () => {
               Experience <br />
               <span className="text-brand-500">The Well.</span>
             </h1>
+
+            <div className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-gray-100 mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
+                <div className="bg-white aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:h-full lg:min-h-[22rem] flex items-center justify-center p-5 sm:p-6 md:p-8 lg:p-10">
+                  <img
+                    src="/images/well-and-cross-hd.png"
+                    alt="The Well logo with hands holding a cross"
+                    className="max-h-full max-w-full h-full w-full object-contain object-center"
+                  />
+                </div>
+                <div className="bg-gray-900 text-white p-10 sm:p-14 md:p-16 lg:p-20 flex flex-col justify-center">
+                  <blockquote className="text-2xl sm:text-3xl md:text-4xl font-extrabold italic leading-tight font-heading mb-8">
+                    &ldquo;I have come that they may have life, and have it to the full.&rdquo;
+                  </blockquote>
+                  <p className="text-brand-300 font-black text-sm uppercase tracking-[0.25em]">John 10:10</p>
+                </div>
+              </div>
+            </div>
             
             <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
               A community defined by peace, rooted in the Christian faith, and located in the historic heart of Shrewsbury.
@@ -72,29 +90,6 @@ const Home: React.FC = () => {
                   <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</span>
                   <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.shortLocation}</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Scripture Feature */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border border-gray-100">
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
-              <div className="bg-white aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:h-full lg:min-h-[22rem] flex items-center justify-center p-5 sm:p-6 md:p-8 lg:p-10">
-                <img
-                  src="/images/well-and-cross-hd.png"
-                  alt="The Well logo with hands holding a cross"
-                  className="max-h-full max-w-full h-full w-full object-contain object-center"
-                />
-              </div>
-              <div className="bg-gray-900 text-white p-10 sm:p-14 md:p-16 lg:p-20 flex flex-col justify-center">
-                <blockquote className="text-2xl sm:text-3xl md:text-4xl font-extrabold italic leading-tight font-heading mb-8">
-                  &ldquo;I have come that they may have life, and have it to the full.&rdquo;
-                </blockquote>
-                <p className="text-brand-300 font-black text-sm uppercase tracking-[0.25em]">John 10:10</p>
               </div>
             </div>
           </div>
