@@ -7,6 +7,77 @@ import VisitForm from '../components/VisitForm.tsx';
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
+      {/* Redesigned Hero Section */}
+      <section className="relative pt-20 pb-28 md:pt-36 md:pb-48 overflow-hidden bg-white">
+        {/* Premium Background Elements */}
+        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-brand-100/40 premium-blur rounded-full -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-brand-50/60 premium-blur rounded-full translate-y-1/2"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="fade-in">
+            <div className="flex items-center space-x-3 mb-10">
+              <span className="w-12 h-[1px] bg-brand-500"></span>
+              <span className="text-brand-500 text-[11px] font-black tracking-[0.3em] uppercase">
+                Shrewsbury Town Square
+              </span>
+            </div>
+            
+            <h1 className="text-7xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading">
+              Experience <br />
+              <span className="text-brand-500">The Well.</span>
+            </h1>
+            
+            <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
+              A community defined by peace, rooted in the Christian faith, and located in the historic heart of Shrewsbury.
+            </p>
+            <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
+              Jesus Christ is good news. Our goal is to bring His message of hope to everyone.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
+              <Link
+                to="/plan-your-visit"
+                className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
+              >
+                Plan Your Visit
+              </Link>
+              <Link
+                to="/sundays"
+                className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              >
+                What's On
+              </Link>
+            </div>
+            
+            <div className="flex items-center space-x-10">
+              <div className="flex items-center group cursor-default">
+                <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
+                  <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Sundays</span>
+                  <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.sundayTime}</span>
+                </div>
+              </div>
+              <div className="w-[1px] h-8 bg-gray-100"></div>
+              <div className="flex items-center group cursor-default">
+                <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
+                  <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</span>
+                  <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.shortLocation}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Scripture Feature */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,80 +101,12 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Redesigned Hero Section */}
-      <section className="relative pt-20 pb-28 md:pt-36 md:pb-48 overflow-hidden bg-white">
-        {/* Premium Background Elements */}
-        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-brand-100/40 premium-blur rounded-full -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-brand-50/60 premium-blur rounded-full translate-y-1/2"></div>
-        
+      {/* Planning a visit */}
+      <section className="relative pb-28 md:pb-48 overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            <div className="lg:col-span-7 fade-in">
-              <div className="flex items-center space-x-3 mb-10">
-                <span className="w-12 h-[1px] bg-brand-500"></span>
-                <span className="text-brand-500 text-[11px] font-black tracking-[0.3em] uppercase">
-                  Shrewsbury Town Square
-                </span>
-              </div>
-              
-              <h1 className="text-7xl md:text-[6.5rem] font-extrabold text-gray-900 leading-[0.95] mb-10 tracking-[-0.05em] font-heading">
-                Experience <br />
-                <span className="text-brand-500">The Well.</span>
-              </h1>
-              
-              <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
-                A community defined by peace, rooted in the Christian faith, and located in the historic heart of Shrewsbury.
-              </p>
-              <p className="text-2xl text-gray-500 mb-12 max-w-xl leading-relaxed font-medium">
-                Jesus Christ is good news. Our goal is to bring His message of hope to everyone.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
-                <Link
-                  to="/plan-your-visit"
-                  className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
-                >
-                  Plan Your Visit
-                </Link>
-                <Link
-                  to="/sundays"
-                  className="px-12 py-6 bg-white border-2 border-gray-100 text-gray-700 rounded-2xl font-black text-center hover:bg-gray-50 hover:border-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  What's On
-                </Link>
-              </div>
-              
-              <div className="flex items-center space-x-10">
-                <div className="flex items-center group cursor-default">
-                  <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
-                    <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Sundays</span>
-                    <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.sundayTime}</span>
-                  </div>
-                </div>
-                <div className="w-[1px] h-8 bg-gray-100"></div>
-                <div className="flex items-center group cursor-default">
-                  <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
-                    <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</span>
-                    <span className="text-gray-900 font-bold tracking-tight">{CHURCH_INFO.shortLocation}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5 lg:pl-4 relative">
-              <div className="absolute -inset-10 bg-brand-500/5 blur-[120px] rounded-full pointer-events-none"></div>
-              <VisitForm />
-            </div>
+          <div className="relative">
+            <div className="absolute -inset-10 bg-brand-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+            <VisitForm />
           </div>
         </div>
       </section>
