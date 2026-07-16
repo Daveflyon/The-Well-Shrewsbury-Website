@@ -55,7 +55,7 @@ const Home: React.FC = () => {
               </div>
 
               <div>
-                <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16">
+                <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-16 lg:justify-end">
                   <Link
                     to="/plan-your-visit"
                     className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
                   </Link>
                 </div>
 
-                <div className="flex items-center space-x-10">
+                <div className="flex items-center space-x-10 lg:justify-end">
                   <div className="flex items-center group cursor-default">
                     <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
                       <svg className="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
