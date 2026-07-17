@@ -79,20 +79,20 @@ const PlanYourVisit: React.FC = () => {
               </div>
 
               {/* Children */}
-              <div className="bg-gray-900 text-white p-16 md:p-20 rounded-[4rem] shadow-2xl relative overflow-hidden group">
+              <div className="bg-gray-900 text-white p-6 sm:p-10 md:p-16 lg:p-20 rounded-[4rem] shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-80 h-80 bg-brand-500/10 blur-[120px] -mr-40 -mt-40 rounded-full" />
                 <h2 className="text-4xl md:text-5xl font-black mb-10 font-heading">For the Families</h2>
                 <p className="text-xl text-gray-300 mb-14 font-medium leading-relaxed">We value our children and youth as full members of our community. We provide safe and fun environments for every age group.</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                  <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                  <div className="bg-white/5 p-6 sm:p-8 md:p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Bible Club (10:30)</h4>
                     <p className="text-gray-400 font-medium leading-relaxed">Engaging crafts and age-appropriate Bible lessons. Parents are welcome to stay nearby for care needs.</p>
                   </div>
-                  <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
+                  <div className="bg-white/5 p-6 sm:p-8 md:p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Youth Group (10:30)</h4>
                     <p className="text-gray-400 font-medium leading-relaxed">A relaxed, welcoming space for our young people to explore faith, ask questions, and build friendships together.</p>
                   </div>
-                  <div className="bg-white/5 p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
+                  <div className="bg-white/5 p-6 sm:p-8 md:p-10 rounded-[2.5rem] border border-white/10 backdrop-blur-sm">
                     <h4 className="font-extrabold text-2xl mb-4 font-heading">Mother & Baby</h4>
                     <p className="text-gray-400 font-medium leading-relaxed">A quiet, dedicated room upstairs with comfortable seating, so you can settle your little one and still feel part of the morning.</p>
                   </div>
