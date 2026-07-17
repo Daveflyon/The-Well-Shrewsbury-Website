@@ -5,7 +5,7 @@ import { CHURCH_INFO } from '../constants.ts';
 const About: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <section className="py-24">
+      <section className="pt-12 pb-8 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-24">
             <h1 className="text-6xl md:text-8xl font-black text-gray-900 mb-10 tracking-tighter font-heading">Our Identity.</h1>
@@ -45,7 +45,7 @@ const About: React.FC = () => {
           </div>
 
           {/* Leadership Section */}
-          <div className="mb-20 md:mb-48">
+          <div className="mb-8 md:mb-48">
             <div className="text-center mb-24">
               <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-8 font-heading tracking-tighter">Our Leadership.</h2>
               <p className="text-2xl text-gray-500 font-medium">The elders and teachers serving our local assembly.</p>

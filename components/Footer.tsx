@@ -4,7 +4,7 @@ import { CHURCH_INFO } from '../constants.ts';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-50 pt-32 pb-16">
+    <footer className="bg-white border-t border-gray-50 pt-16 md:pt-32 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-32">
           <div className="col-span-1 lg:col-span-1">
