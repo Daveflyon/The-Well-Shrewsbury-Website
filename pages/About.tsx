@@ -45,7 +45,7 @@ const About: React.FC = () => {
           </div>
 
           {/* Leadership Section */}
-          <div className="mb-48">
+          <div className="mb-20 md:mb-48">
             <div className="text-center mb-24">
               <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-8 font-heading tracking-tighter">Our Leadership.</h2>
               <p className="text-2xl text-gray-500 font-medium">The elders and teachers serving our local assembly.</p>
@@ -77,9 +77,9 @@ const About: React.FC = () => {
                   {'email' in person && person.email && (
                     <a
                       href={`mailto:${person.email}`}
-                      className="mt-3 text-xs text-gray-400 hover:text-brand-500 transition-colors duration-300 break-all"
+                      className="mt-3 text-[10px] sm:text-xs text-gray-400 hover:text-brand-500 transition-colors duration-300 break-words"
                     >
-                      {person.email}
+                      {person.email.replace('@', '@​')}
                     </a>
                   )}
                 </div>
