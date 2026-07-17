@@ -50,7 +50,7 @@ const About: React.FC = () => {
               <h2 className="text-5xl md:text-7xl font-black text-gray-900 mb-8 font-heading tracking-tighter">Our Leadership.</h2>
               <p className="text-2xl text-gray-500 font-medium">The elders and teachers serving our local assembly.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-10 gap-y-16">
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-5 sm:gap-x-10 gap-y-12 sm:gap-y-16">
               {CHURCH_INFO.leadership.map((person) => (
                 <div key={person.name} className="group text-center flex flex-col items-center">
                   <div className="w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-6 shadow-sm border border-gray-100 bg-gray-50/30 transition-all duration-500">
