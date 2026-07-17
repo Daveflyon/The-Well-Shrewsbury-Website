@@ -13,7 +13,7 @@ const About: React.FC = () => {
               We are a Christian community in Shrewsbury dedicated to seeing lives and nations reshaped by love.
             </p>
             <p className="text-2xl text-gray-500 font-medium leading-relaxed mt-6">
-              The Well is a non-denominational Christian church based in Shrewsbury, Shropshire, England. Jesus Christ is good news, and our goal is to bring His positive message of hope to everyone. As Jesus promised, "I have come that they may have life, and have it to the full." (John 10:10)
+              The Well is a <span className="whitespace-nowrap">non-denominational</span> Christian church based in Shrewsbury, Shropshire, England. Jesus Christ is good news, and our goal is to bring His positive message of hope to everyone. As Jesus promised, "I have come that they may have life, and have it to the full." (John 10:10)
             </p>
           </div>
 

@@ -61,25 +61,25 @@ const Sundays: React.FC = () => {
           </div>
 
           {/* Midweek Activities */}
-          <div className="bg-gray-900 text-white rounded-[2rem] sm:rounded-[3rem] md:rounded-[5rem] p-6 sm:p-10 md:p-16 lg:p-32 relative overflow-hidden shadow-3xl">
+          <div className="bg-gray-900 text-white rounded-[2rem] sm:rounded-[3rem] md:rounded-[5rem] p-6 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-3xl">
             <div className="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-transparent opacity-60" />
             <div className="relative z-10 min-w-0">
               <h2 className="text-3xl sm:text-4xl md:text-7xl font-black mb-10 md:mb-20 text-center font-heading tracking-tighter">Midweek Life.</h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
-                <div className="bg-white/5 p-6 sm:p-10 md:p-16 rounded-[1.5rem] md:rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500 min-w-0">
+                <div className="bg-white/5 p-6 sm:p-8 md:p-10 rounded-[1.5rem] md:rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500 min-w-0">
                   <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.3em] block mb-6 md:mb-8">Tuesdays • {CHURCH_INFO.meetings.tuesday.time}</span>
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 md:mb-8 font-heading break-words">{CHURCH_INFO.meetings.tuesday.title}</h3>
                   <p className="text-gray-400 text-base sm:text-lg md:text-xl font-medium leading-relaxed">{CHURCH_INFO.meetings.tuesday.description}</p>
                 </div>
-                <div className="bg-white/5 p-6 sm:p-10 md:p-16 rounded-[1.5rem] md:rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500 min-w-0">
+                <div className="bg-white/5 p-6 sm:p-8 md:p-10 rounded-[1.5rem] md:rounded-[3rem] border border-white/10 backdrop-blur-md group hover:bg-white/10 transition-all duration-500 min-w-0">
                   <span className="text-brand-300 font-black text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.3em] block mb-6 md:mb-8">New Midweek Schedule</span>
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 md:mb-8 font-heading break-words leading-tight">Wednesdays. Two studies each week. Now running.</h3>
                   <div className="space-y-6 md:space-y-8 text-gray-400 text-base sm:text-lg md:text-xl font-medium leading-relaxed">
                     <p>
-                      <strong className="text-white">Marriage &amp; Relationship Study</strong><br /><strong className="text-white">7:00 to 8:00pm</strong><br />Building stronger, Christ-centred relationships and homes. For adults and married couples.
+                      <strong className="text-white whitespace-nowrap">Marriage &amp; Relationship Study</strong><br /><strong className="text-white">7:00 to 8:00pm</strong><br />Building stronger, Christ-centred relationships and homes. For adults and married couples.
                     </p>
                     <p>
-                      <strong className="text-white">Main Church Bible Study</strong><br /><strong className="text-white">8:00 to 9:00pm</strong><br />Going deeper into God's Word together as one church family. All are welcome.
+                      <strong className="text-white whitespace-nowrap">Main Church Bible Study</strong><br /><strong className="text-white">8:00 to 9:00pm</strong><br />Going deeper into God's Word together as one church family. All are welcome.
                     </p>
                   </div>
                 </div>
