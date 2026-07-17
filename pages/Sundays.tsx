@@ -76,10 +76,10 @@ const Sundays: React.FC = () => {
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 md:mb-8 font-heading break-words leading-tight">Wednesdays. Two studies each week. Now running.</h3>
                   <div className="space-y-6 md:space-y-8 text-gray-400 text-base sm:text-lg md:text-xl font-medium leading-relaxed">
                     <p>
-                      <strong className="text-white">Marriage &amp; Relationship Study, 7:00 to 8:00pm.</strong> Building stronger, Christ-centred relationships and homes. For adults and married couples.
+                      <strong className="text-white">Marriage &amp; Relationship Study</strong><br /><strong className="text-white">7:00 to 8:00pm</strong><br />Building stronger, Christ-centred relationships and homes. For adults and married couples.
                     </p>
                     <p>
-                      <strong className="text-white">Main Church Bible Study, 8:00 to 9:00pm.</strong> Going deeper into God's Word together as one church family. All are welcome.
+                      <strong className="text-white">Main Church Bible Study</strong><br /><strong className="text-white">8:00 to 9:00pm</strong><br />Going deeper into God's Word together as one church family. All are welcome.
                     </p>
                   </div>
                 </div>
