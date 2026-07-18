@@ -76,7 +76,7 @@ const Home: React.FC = () => {
                   <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-6 mb-10">
                     <Link
                       to="/plan-your-visit"
-                      className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
+                      className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center shadow-lg shadow-brand-500/30 hover:bg-brand-600 hover:shadow-2xl hover:-translate-y-1.5 active:translate-y-0 transition-all duration-300"
                     >
                       Where to find us
                     </Link>
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
                     <div className="flex flex-col items-start">
                       <Link
                         to="/plan-your-visit"
-                        className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
+                        className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center shadow-lg shadow-brand-500/30 hover:bg-brand-600 hover:shadow-2xl hover:-translate-y-1.5 active:translate-y-0 transition-all duration-300"
                       >
                         Where to find us
                       </Link>
