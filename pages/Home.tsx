@@ -82,7 +82,7 @@ const Home: React.FC = () => {
                     </Link>
                     <Link
                       to="/sundays"
-                      className="px-12 py-6 bg-brand-50 border-2 border-brand-100 text-brand-600 rounded-2xl font-black text-center hover:bg-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                      className="px-12 py-6 bg-brand-50 border-2 border-brand-500 text-brand-600 rounded-2xl font-black text-center shadow-lg shadow-brand-500/15 hover:bg-brand-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300"
                     >
                       What's On
                     </Link>
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
                     <div className="flex flex-col items-start">
                       <Link
                         to="/sundays"
-                        className="px-12 py-6 bg-brand-50 border-2 border-brand-100 text-brand-600 rounded-2xl font-black text-center hover:bg-brand-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                        className="px-12 py-6 bg-brand-50 border-2 border-brand-500 text-brand-600 rounded-2xl font-black text-center shadow-lg shadow-brand-500/15 hover:bg-brand-100 hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300"
                       >
                         What's On
                       </Link>
