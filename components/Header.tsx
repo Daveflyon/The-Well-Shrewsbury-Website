@@ -69,7 +69,7 @@ const Header: React.FC = () => {
               to="/plan-your-visit"
               className="bg-brand-500 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-brand-600 transition-all duration-300 shadow-[0_8px_15px_-3px_rgba(0,51,153,0.3)] hover:shadow-[0_20px_25px_-5px_rgba(0,51,153,0.4)] hover:-translate-y-0.5"
             >
-              Plan Your Visit
+              Where to find us
             </Link>
           </div>
 
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-center bg-brand-500 text-white py-4 rounded-xl font-bold shadow-lg hover:bg-brand-600 transition-all duration-300"
             >
-              Plan Your Visit
+              Where to find us
             </Link>
           </div>
         </div>
