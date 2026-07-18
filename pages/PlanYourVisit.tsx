@@ -8,7 +8,7 @@ const PlanYourVisit: React.FC = () => {
       {/* Page Header */}
       <section className="py-24 bg-white border-b border-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-8 tracking-tight font-heading">Coming to The Well</h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-8 tracking-tight font-heading">Coming to <span className="whitespace-nowrap">The Well</span></h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">
             We’ve made joining us simple and stress-free. Here is everything you need to know.
           </p>
