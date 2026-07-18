@@ -47,7 +47,7 @@ const VisitForm: React.FC = () => {
     <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl border border-gray-50 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-1.5 bg-brand-500"></div>
       <h3 className="text-2xl font-bold text-gray-900 mb-2 font-heading">Planning a visit?</h3>
-      <p className="text-gray-500 font-medium mb-8">You're welcome to simply turn up. If you'd like us to welcome you personally, let us know you're coming and we'll look out for you.</p>
+      <p className="text-gray-500 font-medium mb-8">You're welcome to simply turn up and we look forward to meeting you. If you'd like us to welcome you personally, then let us know by sending us your plan below and we'll look out for you.</p>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>

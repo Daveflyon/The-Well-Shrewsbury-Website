@@ -62,7 +62,7 @@ const Home: React.FC = () => {
                       to="/plan-your-visit"
                       className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
                     >
-                      Plan Your Visit
+                      Where to find us
                     </Link>
                     <Link
                       to="/sundays"
@@ -106,7 +106,7 @@ const Home: React.FC = () => {
                         to="/plan-your-visit"
                         className="px-12 py-6 bg-brand-500 text-white rounded-2xl font-black text-center hover:bg-brand-600 transition-all duration-300 shadow-[0_15px_30px_-5px_rgba(0,51,153,0.35)] hover:shadow-[0_25px_45px_-5px_rgba(0,51,153,0.45)] hover:-translate-y-1.5 active:translate-y-0"
                       >
-                        Plan Your Visit
+                        Where to find us
                       </Link>
                       <div className="flex items-center mt-8 group cursor-default">
                         <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center mr-4 group-hover:bg-brand-100 transition-colors">
