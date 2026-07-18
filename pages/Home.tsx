@@ -252,7 +252,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <Link
-                to="/contact"
+                to="/plan-your-visit"
                 className="inline-flex items-center px-10 py-5 bg-gray-900 text-white rounded-2xl font-black hover:bg-black transition-all duration-300 shadow-2xl hover:-translate-y-1.5"
               >
                 Get Directions
