@@ -59,3 +59,10 @@ If it complains about index.lock: run  del .git\index.lock  then try the commit 
 - Repo: github.com/Daveflyon/The-Well-Shrewsbury-Website  (branch: main)
 - Live site: thewellshrewsbury.com
 - Deploy chain: push to main, Hostinger auto-builds with Vite, live in a minute or two.
+
+## Clean URLs / routing
+
+- Pages have clean addresses, for example thewellshrewsbury.com/about, with no # in them.
+- This works because of two things: the app uses BrowserRouter (set in App.tsx), and the file public/.htaccess tells Hostinger to serve the app for any address it does not recognise (the single-page-app fallback). That fallback is what lets someone visit a deep page directly, or refresh on it, without getting an error.
+- If deep pages ever start showing an error on refresh, check that public/.htaccess still exists and has deployed.
+- A mistyped or unknown address shows a tidy "Page not found" page with a Back to Home button. That page is defined in App.tsx.
