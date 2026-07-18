@@ -9,6 +9,22 @@ const Sundays: React.FC = () => {
     <div className="flex flex-col">
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mb-16 md:mb-24">
+            <div className="bg-gray-50 border border-gray-100 p-6 sm:p-10 md:p-12 rounded-[2rem] md:rounded-[3rem] shadow-sm">
+              <p className="text-[11px] font-black text-brand-500 uppercase tracking-[0.3em] mb-6">This Summer's Event</p>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 font-heading tracking-tight break-words leading-tight">Summer Holiday Football Sessions. Free.</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+                <a href="https://thewellshrewsburyfootball.com/" target="_blank" rel="noopener noreferrer" className="block rounded-[1.5rem] overflow-hidden shadow-lg hover:-translate-y-1 transition-transform duration-300">
+                  <img src="/images/football-sessions.jpg" alt="The Well Shrewsbury Summer Holiday Football Sessions flyer" className="w-full h-auto" />
+                </a>
+                <div>
+                  <p className="text-base sm:text-xl text-gray-500 font-medium leading-relaxed mb-8">Free football for kids, teens and young adults, aged 11 to 18. Every Thursday, 6:00 to 7:00pm, from 23 July to 27 August 2026, at Shrewsbury Football Stadium, Croud Meadows, Oteley Road, SY2 6ST. Parental consent required.</p>
+                  <a href="https://thewellshrewsburyfootball.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-brand-500 text-white rounded-2xl font-black hover:bg-brand-600 transition-all duration-300 shadow-lg hover:-translate-y-0.5">Register now &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="max-w-3xl mb-16 md:mb-24">
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-black text-gray-900 mb-6 md:mb-10 tracking-tighter font-heading">Our Sundays.</h1>
             <p className="text-lg sm:text-2xl text-gray-500 font-medium leading-relaxed">
@@ -97,20 +113,6 @@ const Sundays: React.FC = () => {
                 <p className="text-base sm:text-xl text-gray-500 font-medium leading-relaxed">
                   For new believers wanting solid biblical grounding, and long-term Christians strengthening their foundations. We explore who God really is, what He is truly like, when eternal life begins, and much more.
                 </p>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 p-6 sm:p-10 md:p-12 rounded-[2rem] md:rounded-[3rem] shadow-sm mt-8">
-                <p className="text-[11px] font-black text-brand-500 uppercase tracking-[0.3em] mb-6">Summer Event</p>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 font-heading tracking-tight break-words leading-tight">Summer Holiday Football Sessions. Free.</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
-                  <a href="https://thewellshrewsburyfootball.com/" target="_blank" rel="noopener noreferrer" className="block rounded-[1.5rem] overflow-hidden shadow-lg hover:-translate-y-1 transition-transform duration-300">
-                    <img src="/images/football-sessions.jpg" alt="The Well Shrewsbury Summer Holiday Football Sessions flyer" className="w-full h-auto" />
-                  </a>
-                  <div>
-                    <p className="text-base sm:text-xl text-gray-500 font-medium leading-relaxed mb-8">Free football for kids, teens and young adults, aged 11 to 18. Every Thursday, 6:00 to 7:00pm, from 23 July to 27 August 2026, at Shrewsbury Football Stadium, Croud Meadows, Oteley Road, SY2 6ST. Parental consent required.</p>
-                    <a href="https://thewellshrewsburyfootball.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-brand-500 text-white rounded-2xl font-black hover:bg-brand-600 transition-all duration-300 shadow-lg hover:-translate-y-0.5">Register now &rarr;</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
