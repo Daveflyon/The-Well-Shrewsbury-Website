@@ -58,6 +58,7 @@ const Notices: React.FC = () => {
   return (
     <section className="bg-white pt-10 md:pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 mb-6 font-heading tracking-tight">Notice Board</h2>
         <div className="bg-amber-50 border-l-4 border-amber-500 rounded-2xl md:rounded-[1.5rem] p-6 sm:p-8 shadow-sm">
           <p className="text-[11px] font-black uppercase tracking-[0.25em] text-amber-600 mb-5">Please Note</p>
           <ul className="space-y-3">

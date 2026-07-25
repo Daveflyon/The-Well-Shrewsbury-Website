@@ -66,3 +66,13 @@ If it complains about index.lock: run  del .git\index.lock  then try the commit 
 - This works because of two things: the app uses BrowserRouter (set in App.tsx), and the file public/.htaccess tells Hostinger to serve the app for any address it does not recognise (the single-page-app fallback). That fallback is what lets someone visit a deep page directly, or refresh on it, without getting an error.
 - If deep pages ever start showing an error on refresh, check that public/.htaccess still exists and has deployed.
 - A mistyped or unknown address shows a tidy "Page not found" page with a Back to Home button. That page is defined in App.tsx.
+
+## Notice Board (homepage announcements)
+
+- Notices at the top of the homepage come from a Google Sheet called "The Well Notice Board", in the WEBSITE folder in Drive.
+  Sheet: https://docs.google.com/spreadsheets/d/1XhNBr6nAO5acFOPYYj-SrMEywY9EyUJC7JX30_l6kGw/edit
+- To post a notice: add a row with Message, Expires (as YYYY-MM-DD, for example 2026-08-09), and an optional Link. It shows on the next page load.
+- To remove one: delete the row, or just let it lapse. A notice shows through the whole of its Expires day and drops off on its own at UK midnight after that date.
+- The sheet must stay shared as "Anyone with the link: Viewer" so the website can read it. Leaders need edit access (folder or sheet) to post.
+- No code change or redeploy is needed for notices; the website reads the sheet live on each visit.
+- If notices ever stop showing, check the sheet is still shared "Anyone with the link: Viewer".
