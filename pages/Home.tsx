@@ -3,10 +3,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CHURCH_INFO } from '../constants.ts';
 import VisitForm from '../components/VisitForm.tsx';
+import Notices from '../components/Notices.tsx';
 
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
+      <Notices />
       {/* Redesigned Hero Section */}
       <section className="relative pt-20 pb-28 md:pt-36 md:pb-48 overflow-hidden bg-white">
         {/* Premium Background Elements */}
