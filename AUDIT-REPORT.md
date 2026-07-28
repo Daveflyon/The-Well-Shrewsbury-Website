@@ -87,7 +87,7 @@ Harmless; left as-is.
 | `/images/Harry.png` | OK |
 | `/images/James.png` | OK |
 | `/images/Kate.png` | OK |
-| `/images/David.jpg` | OK |
+| `/images/david-smile.png` | OK |
 | `/images/Mohamed.png` | OK |
 | `/images/shrewsbury-town-square.jpg` | OK |
 | `/images/the-well-mark.png` | OK |

@@ -50,7 +50,7 @@ export const CHURCH_INFO = {
     { name: "Harry", role: "Elder and Pastor", image: "/images/Harry.png", email: "harry@thewellshrewsbury.com" },
     { name: "James", role: "Elder and Co-Pastor", image: "/images/James.png", email: "james@thewellshrewsbury.com" },
     { name: "Kate", role: "Administration", image: "/images/Kate.png" },
-    { name: "David", role: "Teacher", image: "/images/David.jpg" },
+    { name: "David", role: "Teacher", image: "/images/david-smile.png" },
     { name: "Mohamed", role: "Associate Leader", image: "/images/Mohamed.png" }
   ]
 };
