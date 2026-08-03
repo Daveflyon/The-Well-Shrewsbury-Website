@@ -8,7 +8,6 @@ import Notices from '../components/Notices.tsx';
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Notices />
       {/* Redesigned Hero Section */}
       <section className="relative pt-20 pb-28 md:pt-36 md:pb-48 overflow-hidden bg-white">
         {/* Premium Background Elements */}
@@ -45,6 +44,8 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            <Notices />
 
             <a
               href="https://thewellshrewsburyfootball.com/"
