@@ -47,22 +47,6 @@ const Home: React.FC = () => {
 
             <Notices />
 
-            <a
-              href="https://thewellshrewsburyfootball.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-brand-500 text-white rounded-[1.5rem] md:rounded-[2rem] p-6 sm:p-8 mb-12 shadow-xl shadow-brand-500/25 hover:bg-brand-600 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <p className="text-[11px] font-black uppercase tracking-[0.25em] text-white/70 mb-2">This Summer's Event</p>
-              <p className="text-xl sm:text-2xl font-extrabold font-heading leading-tight mb-3">Summer Holiday Football starts on 23rd July.</p>
-              <p className="inline-flex items-center text-sm font-black uppercase tracking-widest text-white/90">
-                Click here to find out more
-                <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </p>
-            </a>
-
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
               <div>
                 <p className="text-2xl text-gray-500 mb-12 leading-relaxed font-medium">
